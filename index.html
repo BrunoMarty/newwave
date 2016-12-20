@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>NewWave Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    $("#menu").click(function(){
+
+
+				if ($("nav").is(":visible")) {
+					$("body").css("overflow-y", "scroll");
+				}
+				else {
+					$("body").css("overflow-y", "hidden");
+				}
+
+				$("nav").fadeToggle("slow");
+    });
+});
+</script>
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="#" id="menu">Accueil</a></li>
+		</ul>
+	</header>
+	<nav>
+	<a href="#">Home</a><br>
+	<a href="#">About</a><br>
+	<a href="#">Home</a><br>
+	<a href="#">About</a><br>
+	<a href="#">Home</a><br>
+	<a href="#">About</a>
+	</nav>
+<main>
+
+		<section>
+			<img src="img1.jpg" alt="">
+			<a href="#">Maison 1</a>
+		</section>
+		<section class="im2">
+			<img src="img2.jpg" alt="" >
+			<a href="#">Maison 2</a>
+		</section>
+		<section class="im2">
+			<img src="img2.jpg" alt="">
+			<a href="#">Maison 2</a>
+		</section>
+		<section>
+			<img src="img1.jpg" alt="">
+			<a href="#">Maison 1</a>
+		</section>
+		<section>
+			<img src="img1.jpg" alt="">
+			<a href="#">Maison 1</a>
+		</section>
+		<section class="im2">
+			<img src="img2.jpg" alt="">
+			<a href="#">Maison 2</a>
+		</section>
+</main>
+</body>
+
+</html>
